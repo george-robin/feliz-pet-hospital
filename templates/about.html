@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Pet Hospital</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="static/about.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Feliz Pet Hospital"></a>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="ap"><a href="{{ url_for('appointment') }}">Schedule an Appointment</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+        </ul>
+    </header>
+    <section>
+        About Us
+    </section>
+    <main>
+        <h1>Our Misson</h1>
+
+        Our mission is to provide high-quality, affordable veterinary care tailored to the unique needs of every pet and parent, delivered by experienced doctors and supported by advanced diagnostics, all easily accessible in your neighborhood.
+        We are committed to promoting long-term health through personalized wellness plans.
+        We offer premium grooming services at an affordable cost, in a clean and hygienic setting, cared for by gentle and compassionate handlers.
+        We also provide affordable, well-maintained, and secure boarding facilities, designed to give pets a comfortable and worry-free stay when their families are away.
+
+        <div>
+            <h1><br>‎ ‎ Core Values</h1>
+            <ul>
+                <li> <h3> 🌟 <br> 1. Excellence in Care </h3> <br> We never compromise on the quality of veterinary care or diagnostics, ensuring every pet receives the best possible treatment. </li>
+                <li> <h3> 💖 <br> 2. Compassion </h3> <br> We treat every pet with kindness, empathy, and respect, while supporting pet parents with understanding and guidance. </li>
+                <li> <h3> ✅ <br> 3. Accessibility & Affordability </h3> <br> We provide high-quality services that are affordable and easily accessible in the community. </li>
+                <li> <h3> 🧑‍🤝‍🧑 <br> 4. Personalized Approach </h3> <br> Every pet is unique; we tailor wellness plans, treatments, grooming, and boarding to meet individual needs. </li>
+                <li> <h3> 🧼 <br> 5. Hygiene & Safety </h3> <br> We maintain clean, safe, and well-organized facilities for medical care, grooming, and boarding. </li>
+                <li> <h3> 🤝 <br> 6. Integrity & Trust </h3> <br> We act transparently and ethically in every interaction, building lasting trust with pets and their families. </li>
+            </ul>
+        </div>
+
+        <article>
+            <ul>
+                <li>
+                    <h1>Know Your Doctor</h1>
+                    <h3>Meet Dr. Thushara, M.V.Sc (Medicine) </h3><br>
+                    With over 20 years of experience in treating and handling small animal cases, Dr. Thushara brings unmatched expertise and compassion to every pet under her care. A postgraduate in Veterinary Medicine, she has conducted significant research in dermatology, with a special focus on demodicosis, ensuring evidence-based approaches to skin disorders.
+                    Dr. Thushara has also completed a Diploma in Critical Care and Emergency Medicine, equipping her to handle urgent and complex cases with confidence and precision. She has many years of experience in ultrasound scanning and cardiac work-ups, managing a large number of cases with accuracy and care.
+                    At our hospital, Dr. Thushara provides *personal attention to every aspect of your pet’s care—from medical treatment to grooming and boarding—ensuring that each pet receives high-quality, compassionate care at every step.
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='images/doctor.jpeg') }}" alt="Picture of Lead Doctor">
+                </li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>

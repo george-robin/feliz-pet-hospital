@@ -1,0 +1,182 @@
+body {
+    background: rgb(55, 65, 81);
+    margin: 0;
+    padding-top: 3rem;
+    overflow-x:hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(55, 65, 81);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    z-index: 999;
+}
+header img{
+    padding: 10px;
+    height:50px;
+    width:50px;
+}
+header ul{
+    margin-left: auto;
+    list-style-type:none;
+    text-align: right;
+    display: flex;
+}
+@media screen and (max-width: 668px) {
+    header ul {
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header li{
+        height: auto;
+    }
+    header li.ap{
+        height: 1.9rem;
+    }
+    div {
+        width: fit-content;
+    }
+    section {
+        width: fit-content;
+    }
+    footer{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 480px) {
+    header ul{
+        padding:0;
+        gap:0.5 rem;
+    }
+    header li{
+        padding:0.2rem 0.5rem;
+    }
+    header img {
+        height: 35px;
+        width: 35px;
+    }
+    header {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    .scroll ul {
+        animation: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .scroll li {
+        width: 90%;
+        height: auto;
+    }
+}
+header li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+header li.ap{
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: rgb(243, 193, 111);
+}
+header li.ap:hover{
+    border-color: rgb(243, 193, 111);
+    background-color: rgb(55, 65, 81);
+    transition: 0.5s;
+}
+header li.ap a{
+    color: white;
+}
+header a{
+    position:relative;
+    color:rgb(243, 193, 111);
+    text-decoration: none;
+}
+header a::after{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(243, 193, 111);
+    bottom: -6px;
+    left:50%;
+    border-radius: 2px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+}
+header a:hover::after{
+    transition: 0.5s;
+    transform: translateX(-50%) scaleX(1);
+}
+
+section {
+    background: rgb(243, 193, 111);
+    color: white;
+    height: 0.1rem;
+    text-align: left;
+    padding: 10rem;
+    font-size: xx-large;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    background-image: url("images/blogs.jpg");
+}
+section a{
+    padding: 0.25rem;
+    display: inline-block;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    border-color: rgb(243, 193, 111);
+    text-decoration: none;
+    text-decoration: underline;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}    
+
+main {
+    background: rgb(55, 65, 81);
+    padding: 1rem;
+}
+
+main ul {
+    list-style: none;
+    padding: 2rem;
+    margin: 0;
+    text-align: left;
+}
+
+main li {
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(35, 40, 49);
+    color: rgb(243, 193, 111);
+    margin: 0.5rem auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    width: 21rem;
+    border-radius: 1rem;
+    height: 30rem;
+    transition: transform 0.3s ease;
+    vertical-align: top;
+    font-weight: light;
+}
+main li:hover {
+    transform: scale(1.05);
+}
+main li div{
+    padding: 1rem;
+}
+main img{
+    width: 21rem;
+    height: 12rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}

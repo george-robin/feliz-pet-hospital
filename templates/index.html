@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bangalore, Affordable and reliable veternary services, personal doctor for your pet, Book an appointment today!">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+    <link rel="manifest"
+          href="{{ url_for('static', filename='images/site.webmanifest') }}">
+    <title>Feliz Pet Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Feliz Pet Hospital"></a>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="ap"><a href="{{ url_for('appointment') }}">Schedule an Appointment</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+        </ul>
+    </header>
+
+    <div class = "main">
+        Feliz Pet Hospital
+        <br>
+        <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqCAgDEEUYJxg7MgYIABBFGDwyBggBEEUYOTIKCAIQLhixAxiABDIICAMQRRgnGDsyBggEEEUYOzIKCAUQABixAxiABDIGCAYQRRg8MgYIBxBFGDzSAQgzOTcwajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KWENLTIAE647MWResfyeW7AU&daddr=First+Floor,+Soul+City,+opposite+DSR+Riviera,+behind+IBO,+Gunjur+Village,+Bengaluru,+Karnataka+560087">📍Visit us</a>
+    </div>
+
+    <section>
+        Our Services
+        <main class = "scroll">
+            <ul>
+                <li>Vaccinations
+                    <div class = "cap"> ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>Keep your pets healthy with timely immunizations.</div>
+                </li>
+                <li>Grooming
+                    <div class = "cap"> ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>Professional grooming for a clean and happy pet.</div>
+                </li>
+                <li>Daily Checkups
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Routine health monitoring for early detection.</div>
+                </li>
+                <li>Surgery
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Expert surgical care for pets in need</div>
+                </li>
+                <li>Pet-boarding
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Safe and comfortable stays for your furry friends.</div>
+                </li>
+            </ul>
+            <ul>
+                <li>Vaccinations
+                    <div class = "cap"> ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>Keep your pets healthy with timely immunizations.</div>
+                </li>
+                <li>Grooming
+                    <div class = "cap"> ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>Professional grooming for a clean and happy pet.</div>
+                </li>
+                <li>Daily Checkups
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Routine health monitoring for early detection.</div>
+                </li>
+                <li>Surgery
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Expert surgical care for pets in need</div>
+                </li>
+                <li>Pet-boarding
+                    <div class = "cap">⭐ ⭐ ⭐ ⭐ ⭐ <br><br> Safe and comfortable stays for your furry friends.</div>
+                </li>
+            </ul>
+        </main>
+    </section>
+        <article>
+            <div class="emoji-bg"></div>
+            <h1><br>Welcome to Feliz Pet Hospital</h1><br><br>
+            <ul>
+                <li> <h3> 📞 <br> 1. Contact us </h3> <br> Simply Book an Appointment and we will get back to you or contact us today at +91 99727 41015 </li>
+                <li> <h3> ⏰ <br> 2. Hours </h3> <br> Visit us at Feliz Pet Hospital from 9:30 - 7:30 pm on all days </li>
+                <li> <h3> ✅ <br> 3. Visit us</h3> <br> Our clinic is located at First Floor, Soul City,Behind IBO, Gunjur Village. Cant wait to meet you there! </li>
+            </ul>
+        </article>
+    <footer>
+        <ul>
+            <li><h3>Feliz Pet Hospital</h3></li>
+            <li><h4>Quick Links</h4></li><br>
+            <li><a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqCAgDEEUYJxg7MgYIABBFGDwyBggBEEUYOTIKCAIQLhixAxiABDIICAMQRRgnGDsyBggEEEUYOzIKCAUQABixAxiABDIGCAYQRRg8MgYIBxBFGDzSAQgzOTcwajBqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KWENLTIAE647MWResfyeW7AU&daddr=First+Floor,+Soul+City,+opposite+DSR+Riviera,+behind+IBO,+Gunjur+Village,+Bengaluru,+Karnataka+560087">Visit us</a></li><br>
+            <li><a href="{{ url_for('appointment') }}">Book an Appointment</a></li><br>
+            <li><a href="{{ url_for('about') }}">About</a></li><br>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li><br>
+            <li><h5>Feliz Pet Hospital, First Floor, Soul City, opposite DSR Riviera, behind IBO, Gunjur Village, Bengaluru, Karnataka 560087</h5></li><br><br>
+        </ul>
+    </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an appointment</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="static/appointment.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Feliz Pet Hospital"></a>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="ap"><a href="{{ url_for('appointment') }}">Schedule an Appointment</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+        </ul>
+    </header>
+    <section>
+    <div> Book an Appointment today! </div>
+    <main>
+        <form action="#" method="POST">
+            <label>Name:</label>
+            <br>
+            <input type="text" name="name" placeholder=" Enter your name" required>
+            <br><br>
+
+            <label>Phone number:</label>
+            <br>
+            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder=" Enter contact details" required>
+            <br><br>
+
+            <label>Message:</label>
+            <br>
+            <input class="m" type="text" name="message" placeholder=" Enter any extra information">
+            <br><br>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </main>
+</section>
+</body>
+</html>

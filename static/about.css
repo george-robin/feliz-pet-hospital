@@ -1,0 +1,235 @@
+body {
+    background: rgb(55, 65, 81);
+    margin: 0;
+    padding-top: 3rem;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(55, 65, 81);
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    z-index: 999;
+}
+header img{
+    padding: 10px;
+    height:50px;
+    width:50px;
+}
+header ul{
+    margin-left: auto;
+    list-style-type:none;
+    text-align: right;
+    display: flex;
+}
+@media screen and (max-width: 668px) {
+    header ul {
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header li{
+        height: auto;
+    }
+    header li.ap{
+        height: 1.9rem;
+    }
+    div, section, footer {
+        width: fit-content;
+    }
+    main > div {
+        width: 100% ;
+        max-width: 100%;
+
+        margin: 0 ;
+        padding-left: 0;
+        padding-right: 0;
+
+        box-sizing: border-box;
+    }
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    header ul{
+        padding:0;
+        gap:0.5 rem;
+    }
+    header li{
+        padding:0.2rem 0.5rem;
+    }
+    header img {
+        height: 35px;
+        width: 35px;
+    }
+    header {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 480px) {
+    .scroll ul {
+        animation: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .scroll li {
+        width: 90%;
+        height: auto;
+    }
+}
+
+header li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+header li.ap{
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: rgb(243, 193, 111);
+}
+header li.ap:hover{
+    border-color: rgb(243, 193, 111);
+    background-color: rgb(55, 65, 81);
+    transition: 0.5s;
+}
+header li.ap a{
+    color: white;
+}
+header a{
+    position:relative;
+    color:rgb(243, 193, 111);
+    text-decoration: none;
+}
+header a::after{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(243, 193, 111);
+    bottom: -6px;
+    left:50%;
+    border-radius: 2px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+}
+
+header a:hover::after{
+    transition: 0.5s;
+    transform: translateX(-50%) scaleX(1);
+}
+section {
+    background: rgb(243, 193, 111);
+    color: white;
+    height: 0.1rem;
+    text-align: left;
+    padding: 10rem;
+    font-size: xx-large;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    background-image: url("images/about.jpg");
+}
+section a{
+    padding: 0.25rem;
+    display: inline-block;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    border-color: rgb(243, 193, 111);
+    text-decoration: none;
+    text-decoration: underline;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+main {
+    padding: 2rem;
+    background: rgb(55, 65, 81);
+    text-align: left;
+    font-size: x-large;
+    color: rgb(243, 193, 111);
+}
+main div {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    background-color: rgb(35, 40, 49);
+    color: rgb(243, 193, 111);
+}
+main div ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+main div li {
+    width: 18rem;
+    text-align: center;
+    background-color: rgb(243, 193, 111);
+    color: rgb(55, 65, 81);
+    margin: 0.5rem auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    vertical-align: top;
+    font-weight: light;
+    padding: 1rem;
+}
+main div li:hover {
+    background-color: rgb(35, 40, 49);
+    color: rgb(243, 193, 111);
+    transform: scale(1.02);
+}
+main article ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+main article li {
+    width: 50%;
+    width: auto;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+}
+main article img{
+    border: 1rem solid rgb(35, 40, 49);
+    margin-left: 10rem;
+    margin-top: 6rem;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 1.5rem;
+}
+@media screen and (max-width: 668px) {
+    main div {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    main article img{
+        margin: 0;
+    }
+}
+footer {
+    background-color: rgb(55, 65, 81);
+    height: 100px;
+    color: gray;
+    padding: 2rem;
+}
+footer ul{
+    list-style-type: none;
+}

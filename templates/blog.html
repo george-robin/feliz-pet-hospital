@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Pet Hospital</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="static/blog.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Feliz Pet Hospital"></a>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="ap"><a href="{{ url_for('appointment') }}">Schedule an Appointment</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+        </ul>
+    </header>
+    <section>
+        Blogs
+    </section>
+    <main>
+        <ul>
+            <a href="{{ url_for('home') }}">
+            <li>
+                <img src="{{ url_for('static', filename='images/vaccination.jpg') }}" alt="Dog getting Vaccinated">
+                <div>
+                <br>
+                <br>
+                <h2>Is Your Pet Vaccinated?</h2>
+                <br>
+                Coming soon
+                </div>
+            </li>
+            </a>
+            <a href="{{ url_for('home') }}">
+            <li>
+                <img src="{{ url_for('static', filename='images/grooming.jpg') }}" alt="Pet getting groomed">
+                <div>
+                    <br>
+                    <h2>How to properly groom your pets.</h2>
+                    <br>
+                    Coming soon
+                </div>
+            </li>
+            </a>
+            <a href="{{ url_for('home') }}">
+            <li>
+                <img src="{{ url_for('static', filename='images/checkup.jpg') }}" alt="Cat getting a checkup">
+                <div>
+                    <br>
+                    <h2>How to make sure your pets are happy.</h2>
+                    <br>
+                    Coming soon
+                </div>
+            </li>
+            </a>
+        </ul>
+    </main>
+</body>
+</html>

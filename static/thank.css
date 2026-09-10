@@ -1,0 +1,72 @@
+body {
+    background: rgb(55, 65, 81);
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+header img{
+    padding: 10px;
+    height:50px;
+    width:50px;
+}
+header ul{
+    margin-left: auto;
+    list-style-type:none;
+    text-align: right;
+}
+header li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+header li.ap{
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: rgb(243, 193, 111);
+}
+header li.ap:hover{
+    border-color: rgb(243, 193, 111);
+    background-color: rgb(55, 65, 81);
+    transition: 0.5s;
+}
+header li.ap a{
+    color: white;
+}
+header a{
+    position:relative;
+    color:rgb(243, 193, 111);
+    text-decoration: none;
+}
+header a::after{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(243, 193, 111);
+    bottom: -6px;
+    left:50%;
+    border-radius: 2px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+}
+header a:hover::after{
+    transition: 0.5s;
+    transform: translateX(-50%) scaleX(1);
+}
+section {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+div {
+    padding: 1rem;
+    background-color: rgb(243, 193, 111);
+    color: rgb(90, 106, 131);
+    font-size: x-large;
+    text-align: center;
+    opacity: 0.9;
+}

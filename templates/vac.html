@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Pet Hospital</title>
+    <link rel="stylesheet" href="static/vac.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Feliz Pet Hospital"></a>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="ap"><a href="{{ url_for('appointment') }}">Schedule an Appointment</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+        </ul>
+    </header>
+</body>
+</html>
