@@ -46,7 +46,8 @@ To run this project locally on your machine, follow these simple steps:
 
 3. **Install dependencies:**
    ```bash
-   pip install flask google-auth google-api-python-client
+   pip install Flask gspread google-auth python-dotenv
+   
    ```
 
 4. **Run the local development server:**
