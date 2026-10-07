@@ -3,10 +3,9 @@
 A full-stack web application designed and deployed for **Feliz Pet Hospital** (Veterinary Clinic, Bangalore). This platform bridges the gap between pet owners and clinic administration by automating customer onboarding and backend appointment logging.
 
 ## 🚀 Impact & Performance Metrics
-* **Client Engagement:** Generated **5,000+ unique digital views** during the launch phase.
+* **Client Engagement:** Generated **5,000+ search impressions (Google Search Console)** during the launch phase.
 * **Business Outcomes:** Directly drove **multiple new client acquisitions** for the hospital.
-* **Process Automation:** Eliminated manual booking friction by connecting web inputs directly to administrative schedules.
-
+* **Brand Visibility & Access:** Amplified hospital recognition and provided prospective clients with instant, frictionless web access **directly highlighted in client feedback**.
 ---
 
 ## 🛠️ Tech Stack & Architecture
