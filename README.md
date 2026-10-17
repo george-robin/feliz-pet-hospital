@@ -2,8 +2,15 @@
 
 A full-stack web application designed and deployed for **Feliz Pet Hospital** (Veterinary Clinic, Bangalore). This platform bridges the gap between pet owners and clinic administration by automating customer onboarding and backend appointment logging.
 
+## 🌐 Live Demo
+
+View the current demo: https://george12.pythonanywhere.com
+
+The clinic’s previous and official domain, https://felizpethospital.in, is temporarily
+**unavailable** while hosting and backend changes are underway.
+The demo above showcases the existing Flask website.
 ## 🚀 Impact & Performance Metrics
-* **Client Engagement:** Generated **5,000+ search impressions (Google Search Console)** during the launch phase.
+* **Client Engagement:** Generated **5,300+ search impressions and 170+ clicks over 8 months (Google Search Console)**.
 * **Business Outcomes:** Directly drove ** new client acquisitions** reported by hospital.
 * **Brand Visibility & Access:** Amplified hospital recognition and provided prospective clients with instant, frictionless web access **directly highlighted in client feedback**.
 ---
