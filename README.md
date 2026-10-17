@@ -1,70 +1,56 @@
-# 🐾 Feliz Pet Hospital Web Platform
+# 🐾 Feliz Pet Hospital
 
-A full-stack web application designed and deployed for **Feliz Pet Hospital** (Veterinary Clinic, Bangalore). This platform bridges the gap between pet owners and clinic administration by automating customer onboarding and backend appointment logging.
+A responsive Flask website built for a veterinary clinic in Bengaluru, India. Visitors can learn about the clinic and submit appointment requests, the application records those requests in a Google Sheet for clinic staff.
 
-## 🌐 Live Demo
+## 🌐 Live demo
 
-View the current demo: https://george12.pythonanywhere.com
+[View the website](https://george12.pythonanywhere.com)
 
-The clinic’s previous and official domain, https://felizpethospital.in, is temporarily
-**unavailable** while hosting and backend changes are underway.
-The demo above showcases the existing Flask website.
-## 🚀 Impact & Performance Metrics
-* **Client Engagement:** Generated **5,300+ search impressions and 170+ clicks over 8 months (Google Search Console)**.
-* **Business Outcomes:** Directly drove ** new client acquisitions** reported by hospital.
-* **Brand Visibility & Access:** Amplified hospital recognition and provided prospective clients with instant, frictionless web access **directly highlighted in client feedback**.
----
+The clinic previously used [felizpethospital.in](https://felizpethospital.in). That domain is currently not live during hosting changes and new features, the link above shows the existing website.
 
-## 🛠️ Tech Stack & Architecture
+## 🚀 What I built
 
-| Layer | Technologies Used | Description |
-| :--- | :--- | :--- |
-| **Frontend** | HTML5, CSS3, JavaScript | Responsive user interface tailored for seamless desktop and mobile navigation. |
-| **Backend** | Python, Flask | Robust routing logic, clean request handling, and dynamic template rendering. |
-| **Database/Automation** | Google Sheets API | Serves as a live administrative ledger to securely sync and store booking records. |
-| **Version Control** | Git, GitHub | Managed deployment branches and clean production asset pipelines. |
+- Developed mobile and desktop pages for clinic information, blog content, vaccination information, and appointment requests.
+- Built Flask routes to display pages and process the appointment form.
+- Integrated the Google Sheets API to record submitted contact details, messages, and timestamps for clinic staff.
 
----
+## 📊 Results
 
-## ✨ Core Features
+Google Search Console recorded **5,300+ impressions and 170+ clicks over approximately eight months**. The clinic also reported gaining new clients after the website launched. The Search Console figures measure search visibility and clicks; they do not establish how many clients came from the site.
 
-* **Full-Stack Form Processing:** Captures customer detail payloads securely through custom frontend interfaces.
-* **Google Sheets Automation Bot:** Uses backend Python scripts and service account keys to append booking data to internal spreadsheets in real-time.
-* **Dynamic Route Management:** Implements organized, clean URL patterns via Flask blueprints to ensure maximum site stability.
+## 🛠️ Tech stack
 
----
+Python ┃ Flask ┃ HTML ┃ CSS ┃ JavaScript ┃ Google Sheets API ┃ PythonAnywhere
 
-## 💻 Local Setup & Installation
+## 💻 Run locally
 
-To run this project locally on your machine, follow these simple steps:
+1. Clone the repository and create a virtual environment:
 
-1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/george-robin/feliz-pet-hospital.git
    cd feliz-pet-hospital
+   python3 -m venv .venv
+   source .venv/bin/activate
    ```
 
-2. **Set up a Python Virtual Environment:**
+2. Install the dependencies:
+
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   pip install -r requirements.txt
    ```
 
-3. **Install dependencies:**
-   ```bash
-   pip install Flask gspread google-auth python-dotenv
-   
-   ```
+3. Configure your own Google Sheets API credentials and spreadsheet ID for the appointment integration. Do not commit a service-account key or your `.env` file. The application currently expects a service-account JSON file at the filename specified in `app.py`.
 
-4. **Run the local development server:**
+4. Start the development server:
+
    ```bash
    python app.py
    ```
-   Open `http://127.0.0` in your web browser.
 
----
+   Open **http://127.0.0.1:8080**.
 
-## 📈 Upcoming Roadmap
-- [ ] Migrate the Google Sheets backend data ledger to a native **MySQL relational database**.
-- [ ] Implement secure student and administrative portal authentications.
-- [ ] Add real-time automated email confirmations for successfully processed bookings.
+## 📈 Planned roadmap
+
+- Replace Google Sheets appointment storage with a MySQL database.
+- Improve form validation and handling of Google Sheets API errors.
+- Explore appointment confirmation emails/whatsapp messages.
